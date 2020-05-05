@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Button from '../components/Button'
 //import {useSelector, useDispatch} from "react-redux";
 //import { useHistory } from "react-router-dom";
 
@@ -21,10 +22,13 @@ const Home = () => {
 
     //Home page render
     return <div>
-        <div className="bg-light border">
-            <div className="text-muted p-2">
+        <div className="row">
+            <div className="col">
                 Placeholder
-                <button className="btn btn-success rounded-pill font-weight-bold">Register</button>
+                <div className="float-right">
+                    <Button text="Sign In" style="btn-secondary font-weight-bold" textStyle="gray"></Button>
+                    <Button text="Register" style="btn-success font-weight-bold"></Button>
+                </div>
             </div>
         </div>
     </div>
