@@ -32,12 +32,12 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className="row">
-            <div className="col-6">
-                <CategoryCard></CategoryCard>
+        <div className="row mt-4">
+            <div className="col-lg-6 mb-3">
+                <CategoryCard title="Sports" description="Price Boost every day on all sports" imageUrl="images/card-sports3.png" buttonText="Go to Sports"></CategoryCard>
             </div>
-            <div className="col-6">
-                <CategoryCard></CategoryCard>
+            <div className="col-lg-6">
+                <CategoryCard title="Casion" description="Offering the best slots and live dealer games" imageUrl="images/card-casino4.png" buttonText="Go to Casino"></CategoryCard>
             </div>
         </div>
     </div>
