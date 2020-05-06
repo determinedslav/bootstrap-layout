@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Button from '../components/Button'
+import CategoryCard from '../components/CategoryCard'
 //import {useSelector, useDispatch} from "react-redux";
 //import { useHistory } from "react-router-dom";
 
@@ -26,9 +27,17 @@ const Home = () => {
             <div className="col">
                 Placeholder
                 <div className="float-right">
-                    <Button text="Sign In" style="btn-secondary font-weight-bold" textStyle="gray"></Button>
+                    <Button text="Sign In" style="btn-secondary font-weight-bold mr-3" textStyle="gray"></Button>
                     <Button text="Register" style="btn-success font-weight-bold"></Button>
                 </div>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-6">
+                <CategoryCard></CategoryCard>
+            </div>
+            <div className="col-6">
+                <CategoryCard></CategoryCard>
             </div>
         </div>
     </div>

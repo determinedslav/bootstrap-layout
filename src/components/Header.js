@@ -8,8 +8,8 @@ const Header = () => {
             <img src= "images/logo.png" alt="logo"/>
             <div className = "float-right">
                 <div className="dropdown">
-                    <button className="btn btn-success rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        English
+                    <button className="btn btn-outline-secondary rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span className="m-1 ml-3 mr-3">English</span>
                     </button>
                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a className="dropdown-item" href="#">English</a>
