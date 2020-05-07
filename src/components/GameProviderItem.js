@@ -5,7 +5,7 @@ const GameProviderItem = props => {
   return (
     <a href="#">
         <div className="">
-            <img className="border-0 rounded-lg" src= {"images/" +props.image+ ".png"} alt={props.image}/>                   
+            <img className="img-fluid border-0 rounded-lg" src= {"images/" +props.image+ ".png"} alt={props.image}/>                   
         </div>
     </a>
   );
