@@ -11,7 +11,7 @@ const CategoryCard = props => {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'}}>
         <div className ="w-50">
-            <div className="text-white text-uppercase font-weight-bold mb-lg-5 mb-3" style={{fontSize:"1.5em"}}>{props.title}</div>
+            <div className="text-white text-uppercase font-weight-bold h4 mb-lg-5 mb-3">{props.title}</div>
             <div className="text-muted mb-lg-5 mb-3">{props.description}</div>
             <Button text={props.buttonText} style="btn-success btn-sm font-weight-bold"></Button>
         </div>
