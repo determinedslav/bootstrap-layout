@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Button from '../components/Button'
 import CategoryCard from '../components/CategoryCard'
+import GameProviderItem from '../components/GameProviderItem'
 
 const Home = () => {    
     return <div>
@@ -19,6 +20,27 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
                 <CategoryCard title="Casion" description="Offering the best slots and live dealer games" imageUrl="images/card-casino4.png" buttonText="Go to Casino"></CategoryCard>
+            </div>
+        </div>
+        <div className="text-white h5">Game Providers</div>
+        <div className="row mb-3">
+            <div className="col-lg-2 col-md-4 col-4 mb-1">
+                <GameProviderItem image="evolution"></GameProviderItem>
+            </div>
+            <div className="col-lg-2 col-md-4 col-4 mb-1">
+                <GameProviderItem image="asiagaming"></GameProviderItem>
+            </div>
+            <div className="col-lg-2 col-md-4 col-4 mb-1">
+                <GameProviderItem image="pragmatic"></GameProviderItem>
+            </div>
+            <div className="col-lg-2 col-md-4 col-4 mb-1">
+                <GameProviderItem image="gameart"></GameProviderItem>
+            </div>
+            <div className="col-lg-2 col-md-4 col-4 mb-1">
+                <GameProviderItem image="betsoft"></GameProviderItem>
+            </div>
+            <div className="col-lg-2 col-md-4 col-4 mb-1">
+                <GameProviderItem image="booming"></GameProviderItem>
             </div>
         </div>
     </div>
