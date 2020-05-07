@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Header = () => {
 
   return (
-    <div className="sticky-top bg-dark p-4">
+    <div className="bg-dark p-4">
         <div className="container">
             <img src= "images/logo.png" alt="logo"/>
             <div className = "float-right">
