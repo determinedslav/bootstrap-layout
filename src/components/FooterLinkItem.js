@@ -5,7 +5,7 @@ const footerLinkItem = props => {
   return (
     <div>
         <a className="text-secondary" href="#">
-            {props.text}
+          {props.text}
         </a>
     </div>
   );
