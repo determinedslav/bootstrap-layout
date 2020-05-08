@@ -1,14 +1,15 @@
 import React from 'react';
 import { faTwitter,faFacebook,faYoutube,faBitcoin,faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FooterLinkItem from './FooterLinkItem'
-import FooterSocialItem from './FooterSocialItem'
+import FooterLinkItem from './FooterLinkItem';
+import FooterSocialItem from './FooterSocialItem';
+import FooterIconItem from './FooterIconItem';
 
 const Footer = () => {
 
   return (
     <div className="container border-top border-secondary">
-        <div className="row mt-3">
+        <div className="row mt-3 border-bottom border-secondary">
             <div className="col-lg-2 mb-4">
                 <div className="mb-3">
                     <img src= "images/logofoot.png" alt="logo"/>
@@ -67,6 +68,19 @@ const Footer = () => {
                     <FooterSocialItem icon={<FontAwesomeIcon icon={faInstagram} />}></FooterSocialItem>
                 </div>
             </div>
+        </div>
+        <div className="d-flex overflow-auto flex-nowrap">
+            <FooterIconItem image="bitcoin"></FooterIconItem>
+            <FooterIconItem image="18"></FooterIconItem>
+            <FooterIconItem image="bitcoin"></FooterIconItem>
+            <FooterIconItem image="bitcoin"></FooterIconItem>
+            <FooterIconItem image="18"></FooterIconItem>
+            <FooterIconItem image="bitcoin"></FooterIconItem>
+            <FooterIconItem image="18"></FooterIconItem>
+            <FooterIconItem image="bitcoin"></FooterIconItem>
+            <FooterIconItem image="18"></FooterIconItem>
+            <FooterIconItem image="18"></FooterIconItem>
+            <FooterIconItem image="bitcoin"></FooterIconItem>
         </div>
     </div>
   );
