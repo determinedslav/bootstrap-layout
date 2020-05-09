@@ -6,6 +6,7 @@ import CategoryCard from '../components/CategoryCard';
 import PopularItem from '../components/PopularItem';
 import GameProviderItem from '../components/GameProviderItem';
 import CategoryItem from '../components/CategoryItem';
+import PromotionItem from '../components/PromotionItem';
 
 const Home = () => {    
     return <div>
@@ -25,8 +26,8 @@ const Home = () => {
                 <CategoryCard title="Casion" description="Offering the best slots and live dealer games" imageUrl="images/card-casino4.png" buttonText="Go to Casino"></CategoryCard>
             </div>
         </div>
-        <div className="text-white h5">Sport Categories</div>
-        <div class="d-flex flex-row overflow-auto flex-nowrap">
+        <div className="text-white mt-3 h5">Sport Categories</div>
+        <div class="row d-flex flex-row overflow-auto flex-nowrap">
             <CategoryItem icon={<FontAwesomeIcon icon={faFutbol} />} iconColor="danger" text="Soccer"></CategoryItem>
             <CategoryItem icon={<FontAwesomeIcon icon={faFutbol} />} iconColor="danger" text="eSoccer"></CategoryItem>
             <CategoryItem icon={<FontAwesomeIcon icon={faBaseballBall} />} iconColor="warning" text="Baseball"></CategoryItem>
@@ -46,7 +47,6 @@ const Home = () => {
             <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="DOTA 2"></CategoryItem>
             <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="LoL"></CategoryItem>
         </div>
-        <div className="row mb-3"></div>
         <div className="text-white h5">Popular</div>
         <div className="row mb-3 border-bottom border-secondary overflow-auto flex-nowrap">
             <div className="col-lg-3 col-md-2 col-3 mb-2">
@@ -66,7 +66,17 @@ const Home = () => {
             </div>
         </div>
         <div className="text-white h5">Exciting promotions start here</div>
-        <div className="row mb-3"></div>
+        <div className="row mt-4 overflow-auto flex-nowrap">
+            <div className="col-lg-6 col-md-8 col-12 mb-3">
+                <PromotionItem title="BNG Happy Birthday" description="Play selected slot games by Booongo and get a chance to win a share of the € 40,000 prize pool!" image="BNG-Bday-sportsbet-mainpage"></PromotionItem>
+            </div>
+            <div className="col-lg-6 col-md-8 col-12 mb-3">
+                <PromotionItem title="Price boost eSports and e Soccer edition" description="Daily Price Boost for ALL esport and eSoccer titles" image="esport-promo-"></PromotionItem>
+            </div>
+            <div className="col-lg-6 col-md-8 col-12 mb-3">
+                <PromotionItem title="BNG Happy Birthday" description="Play selected slot games by Booongo and get a chance to win a share of the € 40,000 prize pool!" image="BNG-Bday-sportsbet-mainpage"></PromotionItem>
+            </div>
+        </div>
         <div className="text-white h5">Game Providers</div>
         <div className="row mb-3">
             <div className="col-lg-2 col-4 mb-3">
