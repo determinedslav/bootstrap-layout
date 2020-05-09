@@ -1,14 +1,16 @@
 import React from 'react';
-import Button from '../components/Button'
-import CategoryCard from '../components/CategoryCard'
-import PopularItem from '../components/PopularItem'
-import GameProviderItem from '../components/GameProviderItem'
+import { faFutbol,faBasketballBall,faTableTennis,faFootballBall,faBaseballBall,faGamepad } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from '../components/Button';
+import CategoryCard from '../components/CategoryCard';
+import PopularItem from '../components/PopularItem';
+import GameProviderItem from '../components/GameProviderItem';
+import CategoryItem from '../components/CategoryItem';
 
 const Home = () => {    
     return <div>
         <div className="row">
             <div className="col">
-                Placeholder
                 <div className="float-right">
                     <Button text="Sign In" style="btn-secondary font-weight-bold mr-3" textStyle="gray"></Button>
                     <Button text="Register" style="btn-success font-weight-bold"></Button>
@@ -24,6 +26,26 @@ const Home = () => {
             </div>
         </div>
         <div className="text-white h5">Sport Categories</div>
+        <div class="d-flex flex-row overflow-auto flex-nowrap">
+            <CategoryItem icon={<FontAwesomeIcon icon={faFutbol} />} iconColor="danger" text="Soccer"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faFutbol} />} iconColor="danger" text="eSoccer"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faBaseballBall} />} iconColor="warning" text="Baseball"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faBasketballBall} />} iconColor="warning" text="eNBA"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faTableTennis} />} iconColor="primary" text="Tenis"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faFootballBall} />} iconColor="warning" text="Football"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="CS:GO"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="DOTA 2"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="LoL"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faFutbol} />} iconColor="danger" text="Soccer"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faFutbol} />} iconColor="danger" text="eSoccer"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faBaseballBall} />} iconColor="warning" text="Baseball"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faBasketballBall} />} iconColor="warning" text="eNBA"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faTableTennis} />} iconColor="primary" text="Tenis"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faFootballBall} />} iconColor="warning" text="Football"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="CS:GO"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="DOTA 2"></CategoryItem>
+            <CategoryItem icon={<FontAwesomeIcon icon={faGamepad} />} iconColor="info" text="LoL"></CategoryItem>
+        </div>
         <div className="row mb-3"></div>
         <div className="text-white h5">Popular</div>
         <div className="row mb-3 border-bottom border-secondary overflow-auto flex-nowrap">
